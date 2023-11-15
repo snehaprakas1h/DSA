@@ -1,7 +1,7 @@
 /*Pattern-1 Rectangular Star Pattern
 
 Example 1:
-Input: N = 3
+Input: N =  3
 Output: 
 * * *
 * * *
