@@ -18,14 +18,15 @@ Output:
 * * * * * *
 * * * * * * */
 
-function printRectangularStar(rows) {
-  for (let i = 0; i < rows; i++) {
-    let row = " ";
-    for (let j = 0; j < rows; j++) {
-      row += "* ";
+function printStarPattern(input) {
+  let pattern = "";
+  for (let i = 0; i < input; i++) {
+    for (let j = 0; j <input; j++) {
+      pattern += "* ";
     }
-    console.log(row);
+    pattern += "\n";
   }
+  console.log(pattern);
 }
 
-printRectangularStar(7);
+printStarPattern(3);

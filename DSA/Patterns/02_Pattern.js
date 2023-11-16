@@ -8,15 +8,22 @@ Output:
 * * *
 
 */
-
+//function to print pattern of stars
 function printRectangularStar(rows) {
-  for (let i = 0; i < rows; i++) {
-    let row = " ";
-    for (let j = 0; j < i+1; j++) {
-      row += "* ";
+  //pattern variable that carries final pattern in star format
+  pattern = "";
+
+  //external for loop for number of rows
+  for (let i = 1; i <= rows; i++) {
+    //internal loop for the star format
+    for (let j = 1; j <= i; j++) {
+      pattern += " *"; //logic to print star with space
     }
-    console.log(row);
+
+    pattern += "\n"; //logic to print pattern in new line for next row
   }
+
+  console.log(pattern); //logic to print final pattern in star format
 }
 
 printRectangularStar(7);
